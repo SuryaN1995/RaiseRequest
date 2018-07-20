@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">RequestForm</string>
+    <string name="feedbacktype1">Service request</string>
+    <string name="feedbacktype2">App Feedback</string>
+    <string name="feedbacktype3">Mobile No Change</string>
+    <string name="concerns">Please Write Your Concerns*</string>
+    <string name="product_type">Product Type*</string>
+    <string name="submit">Submit</string>
+</resources>

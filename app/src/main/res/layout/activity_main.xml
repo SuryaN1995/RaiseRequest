@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <!--Put form controls here-->
+
+        <Spinner
+            android:id="@+id/requestType"
+            android:textAlignment="textStart"
+            android:spinnerMode="dialog"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="25dp"
+            android:entries="@array/feedbackTypeList">
+        </Spinner>
+
+        <Spinner
+            android:id="@+id/loanApplicationNumber"
+            android:textAlignment="textStart"
+            android:spinnerMode="dialog"
+            style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:entries="@array/feedbackTypeList">
+        </Spinner>
+
+        <EditText
+            android:id="@+id/productType"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="@string/product_type"
+            android:inputType="textMultiLine"
+            android:layout_width="fill_parent">
+        </EditText>
+
+        <EditText
+            android:id="@+id/writeYourConcerns"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="@string/concerns"
+            android:inputType="textMultiLine"
+            android:maxLines="2"
+            android:layout_width="fill_parent">
+        </EditText>
+
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="@string/submit">
+        </Button>
+
+    </LinearLayout>
+</ScrollView>
